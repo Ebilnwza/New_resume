@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import qrline from '../assets/line.png'
+
 const navigation = [
   { name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=100010370618977' },
   { name: 'Line', href: '#', isLine: true },
@@ -26,7 +27,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Disclosure as="nav" className="bg-gray-800">
+      <Disclosure as="nav" className="bg-gray-800 fixed w-full">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -75,7 +76,7 @@ export default function Navbar() {
                     <span className="sr-only">Open user menu</span>
                     <img
                       alt=""
-                      src  ="https://scontent.fbkk13-3.fna.fbcdn.net/v/t39.30808-6/418837648_2052245055131162_4905678453270264319_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEexd9EmH5saZ1r7wtFBEZ1z3Gjlydx6TnPcaOXJ3HpOQ7BmNOHbym6sAyq3bU4v4dXijNMrgLoVQ42CPnVtpZH&_nc_ohc=5gkJZ9KD69IQ7kNvgHDp7ao&_nc_ht=scontent.fbkk13-3.fna&oh=00_AYDXAekc0HTKsjcrFLoH_ULYDbT14l4U-e21JUBZDWe6bg&oe=66A587B2"
+                      src="https://scontent.fbkk13-3.fna.fbcdn.net/v/t39.30808-6/418837648_2052245055131162_4905678453270264319_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEexd9EmH5saZ1r7wtFBEZ1z3Gjlydx6TnPcaOXJ3HpOQ7BmNOHbym6sAyq3bU4v4dXijNMrgLoVQ42CPnVtpZH&_nc_ohc=5gkJZ9KD69IQ7kNvgHDp7ao&_nc_ht=scontent.fbkk13-3.fna&oh=00_AYDXAekc0HTKsjcrFLoH_ULYDbT14l4U-e21JUBZDWe6bg&oe=66A587B2"
                       className="h-8 w-8 rounded-full"
                     />
                   </MenuButton>

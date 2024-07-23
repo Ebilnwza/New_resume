@@ -1,4 +1,5 @@
 import React from "react";
+import BG from "./BG";
 import { motion } from "framer-motion";
 const resume_card = () => {
   const data = {
@@ -13,7 +14,7 @@ const resume_card = () => {
     tel: "0958456270",
   };
   return (
-    <div className="bg-gray-100 font-sans  flex items-center justify-center">
+    <div className="bg-gray-100 font-sans flex items-center justify-center">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
